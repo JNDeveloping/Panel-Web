@@ -1,0 +1,9 @@
+node_modules/
+frontend/dist/
+backend/logs/*.log
+backend/backups/*.sqlite
+database/*.sqlite
+database/*.sqlite-*
+backend/.env
+frontend/.env
+.DS_Store

@@ -1,0 +1,1 @@
+export function SimpleSection({ title, children }) { return <div className="space-y-5"><h1 className="text-4xl font-black">{title}</h1><div className="glass rounded-3xl p-8 text-slate-300">{children}</div></div> }

@@ -1,0 +1,21 @@
+{
+  "name": "whatsapp-sobres-panel",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Panel web moderno para bot WhatsApp de sobres y caja fuerte",
+  "workspaces": ["backend", "frontend"],
+  "scripts": {
+    "dev": "npm run dev --workspace backend & npm run dev --workspace frontend",
+    "dev:backend": "npm run dev --workspace backend",
+    "dev:frontend": "npm run dev --workspace frontend",
+    "install:all": "npm install",
+    "migrate": "npm run migrate --workspace backend",
+    "seed": "npm run seed --workspace backend",
+    "build": "npm run build --workspace frontend",
+    "start": "npm run start --workspace backend",
+    "setup": "cp -n backend/.env.example backend/.env || true && cp -n frontend/.env.example frontend/.env || true && npm install && npm run migrate && npm run seed"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}
