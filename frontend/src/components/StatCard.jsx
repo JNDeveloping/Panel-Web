@@ -1,0 +1,3 @@
+export function StatCard({ title, value, icon: Icon, accent='from-cyan to-blue-500', subtitle }) {
+  return <div className="glass rounded-3xl p-6 overflow-hidden relative"><div className={`absolute -right-8 -top-8 h-28 w-28 rounded-full bg-gradient-to-br ${accent} opacity-20 blur-xl`}/><div className="flex items-start justify-between"><div><p className="text-slate-400 text-sm">{title}</p><h2 className="text-3xl font-black mt-2">{value}</h2><p className="text-xs text-slate-500 mt-3">{subtitle}</p></div>{Icon && <div className={`rounded-2xl bg-gradient-to-br ${accent} p-3 text-night`}><Icon /></div>}</div></div>;
+}
